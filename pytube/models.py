@@ -47,7 +47,7 @@ class Video(object):
         self.audio_codec = audio_codec
         self.audio_bitrate = audio_bitrate
 
-    def download(self, path, chunk_size=8 * 1024, on_progress=None,
+    def download(self, path='.', chunk_size=8 * 1024, on_progress=None,
                  on_finish=None, force_overwrite=False):
         """Downloads the video.
 
